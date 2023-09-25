@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap');
+
+*{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      text-decoration: none;
+      /* font-family: 'Lato', sans-serif; */
+      font-family: 'Roboto', sans-serif; 
+    
+}
+
+body{
+       display: grid;
+}
+
+.banner_container{
+      background-image: url(../img/bg.jpg);
+      height:100vh;
+      background-position: center;
+      background-size: cover;
+}
+
+.blur{
+       height:100vh;
+       background-color: rgba(0, 0, 0, 0.399);
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.672);
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 100;
+    .desktop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .5rem 4rem;
+
+        .logo{
+             display: flex;
+             flex-direction: column;
+        }
+        .logo a{
+              font-size:1.5rem;
+              color:burlywood ;
+        }
+        .logo span{
+              font-size:1.2rem;
+              color:white;
+        }
+
+        .nav_links{
+              display: flex;
+              gap:2rem;
+              
+        }
+        .nav_links a{
+               color:rgb(230, 228, 228);
+               font-size:1.3rem;
+
+        }
+
+        .mobile_icon{
+              color:white;
+              font-size:1.2rem;
+              display: none;
+        }
+    }
+
+    .mobile{
+          display:none;
+    }
+}
+
+.hero{
+      position:relative;
+      top:13rem;
+      margin-left:3rem;
+      color:rgb(225, 225, 225);
+      display: grid;
+      gap:1rem;
+
+      .heading{
+           font-size:2.5rem;
+      }
+
+      .hero_text{
+          font-size:18px;
+          line-height: 1.5;
+      }
+}
+
+.hero a{
+       color:#000;
+       font-size:17px;
+       background-color: burlywood;
+       width:150px;
+       padding: .5rem;
+       text-align:center;
+       border-radius:10px;
+       font-weight:bold;
+}
+
+
+.about{
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      gap:3rem;
+      margin-top:1rem;
+      height:80vh;
+
+
+      .col1 img{
+         border-radius:10px;
+         width:440px;
+      }
+
+      .col2{
+          display: grid;
+          gap:1rem;
+
+          .title{
+             font-size:2.2rem;
+          }
+
+          .subtitle{
+               font-size:25px;
+          }
+
+          .about_text{
+               font-size:18px;
+               line-height: 1.5;
+          }
+      }
+}
+
+
+.petstore{
+      height:100vh;
+      margin-top:3rem;
+      .title{
+             text-align:center;
+      }
+
+      .petcards{
+             display: flex; 
+             justify-content: center;
+             align-items: center;
+             gap:3rem;
+             margin-top:2rem;
+            .petcard{
+                  width:300px;
+            }
+
+            .img{
+                   overflow: hidden; 
+                   height:400px;
+            }
+
+            .img img{
+                    width:100%;
+            }
+
+
+            .doginfo{
+                   display:grid;
+                   place-items:center;
+                   gap:.5rem;
+                   margin-top:5px;
+            }
+
+            .doginfo span{
+                   font-weight:bold; 
+                   font-size:19px;
+            }
+
+            .doginfo a{
+                     padding: .5rem;
+                     color:black;
+                     border-radius: 10px;
+                     width:100px;
+                     border:1px solid burlywood;
+            }
+
+            .active{
+                    background-color: burlywood;
+            }
+
+
+      }
+
+      .more{ 
+            
+            text-align: center;
+            border:1px solid burlywood;
+            border-radius: 10px;
+            width:200px;
+            margin: 0 auto;
+            padding: .5rem;
+            background-color: burlywood;
+            margin-top:2rem;
+      }
+
+      .more a{
+            color:black; 
+               
+      }
+
+    
+}
+
+.petneeds{
+       height:70vh;
+
+       .title{
+              text-align:center;
+
+       }
+
+       .items{
+                  display:flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap:8rem;
+                  margin-top:3rem;
+
+                  .item{
+                        text-align:center;
+                  }
+            .item img{
+                   width:80px;
+            }
+
+            .item p{
+                   font-size:18px;
+            }
+       }
+
+}
+
+.petdonation{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:5rem;
+        background-color: rgba(211, 211, 211, 0.185);
+        height: 60vh;
+        padding:1rem;
+
+        .img img{
+            width:350px;
+      }
+
+
+        .donationinfo{
+              display: grid;
+              gap:1rem;
+              font-size: 18px;
+
+              .title{
+                    letter-spacing: 2px;
+              }
+             
+        }
+}
+
+
+.contact{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      gap:6rem;
+      background-color: rgba(0, 0, 0, 0.902);
+      color:white;
+      padding:1rem;
+
+      .col{
+             display:grid;
+             gap:2rem;
+             font-size:18px;
+      }
+
+      .col img{
+               width:200px;
+               border-radius:10px;
+      }
+}
+
+ 
+
+@media only screen and (max-width:600px){
+
+      .banner_container{
+            background-image: url(../img/bg.jpg);
+            height:100vh;
+            background-position: center;
+            background-size: cover;
+      }
+      
+      .blur{
+             height:100vh;
+             background-color: rgba(0, 0, 0, 0.399);
+      }
+      
+    .header{
+        background-color: rgba(0, 0, 0, 0.679);
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index: 100;
+        .desktop{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: .5rem 2rem;
+                
+    
+            .logo{
+                 display: flex;
+                 flex-direction: column;
+            }
+            .logo a{
+                  font-size:1.5rem;
+                  color:burlywood ;
+            }
+            .logo span{
+                  font-size:1.2rem;
+                  color:white;
+            }
+    
+            .nav_links{
+                  display: none;
+                  gap:2rem;
+                  
+            }
+            .nav_links a{
+                   color:rgb(230, 228, 228);
+                   font-size:1.3rem;
+    
+            }
+    
+            .mobile_icon{
+                  color:white;
+                  font-size:1.2rem;
+                  display: block;
+            }
+        }
+    
+        .mobile{
+              display:none;
+              gap:1rem;
+              padding: .5rem 2rem;
+              margin-top:1.5rem;
+                 
+        }
+        .mobile a{
+              font-size:1.3rem;
+              color:rgb(230, 228, 228);
+                 
+        }
+
+        .toggle{
+            
+              display:grid;
+        }
+
+     }
+
+     .hero{
+      position:relative;
+      top:12rem;
+      margin-left:1em;
+      color:rgb(226, 226, 226);
+      display: grid;
+      gap:1rem;
+      overflow: hidden;
+
+      .heading{
+           font-size:2.5rem;
+      }
+
+      .hero_text{
+          font-size:18px;
+          line-height: 1.5;
+      }
+     }
+
+      
+    .about{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content: center;
+            gap:3rem;
+            margin-top:4rem;
+            height:60vh;
+
+
+            .col1 img{
+              border-radius:10px;
+              width:440px;
+            }
+
+            .col2{
+            display: grid;
+            gap:1rem;
+
+            .title{
+                  font-size:2.2rem;
+            }
+
+            .subtitle{
+                  font-size:1.5rem;
+            }
+
+            .about_text{
+                  font-size:17px;
+                  line-height: 1.5;
+            }
+            }
+
+      }
+
+      .petstore{
+            height:100vh;
+            margin-top:32rem;
+            .title{
+                   text-align:center;
+            }
+      
+            .petcards{
+                   display: flex;
+                   flex-wrap: wrap; 
+                   align-items: center;
+                   justify-content: center;
+                   gap:3rem;
+                   margin-top:2rem;
+                  .petcard{
+                        width:300px;
+                  }
+      
+                  .img{
+                         overflow: hidden; 
+                         height:400px;
+                  }
+      
+                  .img img{
+                          width:100%;
+                  }
+      
+      
+                  .doginfo{
+                         display:grid;
+                         place-items:center;
+                         gap:.5rem;
+                         margin-top:5px;
+                  }
+      
+                  .doginfo span{
+                         font-weight:bold; 
+                         font-size:19px;
+                  }
+      
+                  .doginfo a{
+                           padding: .5rem;
+                           color:black;
+                           border-radius: 10px;
+                           width:100px;
+                           border:1px solid burlywood;
+                  }
+      
+                  .active{
+                          background-color: burlywood;
+                  }
+      
+      
+            }
+      
+            .more{ 
+                  
+                  text-align: center;
+                  border:1px solid burlywood;
+                  border-radius: 10px;
+                  width:200px;
+                  margin: 0 auto;
+                  padding: .5rem;
+                  background-color: burlywood;
+                  margin-top:2rem;
+            }
+      
+            .more a{
+                  color:black; 
+                     
+            }
+      
+          
+      }
+
+      .petneeds{
+            height:60vh;
+            margin-top: 73rem;
+            .title{
+                   text-align:center;
+     
+            }
+     
+            .items{
+                       display:flex;
+                       flex-wrap: wrap;
+                       align-items: center;
+                       justify-content: center;
+                       gap:2rem;
+                       margin-top:3rem;
+     
+                       .item{
+                             text-align:center;
+                       }
+                 .item img{
+                        width:80px;
+                 }
+     
+                 .item p{
+                        font-size:18px;
+                 }
+            }
+     
+     }
+
+     .petdonation{
+      display:grid;
+      margin-top:10rem;   
+      background-color: rgba(211, 211, 211, 0.164);
+      height: auto;
+      padding:1rem  3rem;
+
+      .img img{
+            width:350px;
+      }
+
+      .donationinfo{
+            display: grid;
+            gap:1rem;
+            font-size: 19px;
+           
+            .title{
+                  letter-spacing: 2px;
+                 
+            }
+           
+      }
+
+  }
+
+
+  
+.contact{
+      display: grid;
+      align-items: center;
+      justify-content:center;
+      gap:3rem;
+      background-color: rgba(0, 0, 0, 0.902);
+      color:white;
+      padding:1rem;
+      /* margin-top:7rem; */
+
+      .col{
+             display:grid;
+             gap:2rem;
+             font-size:18px;
+      }
+
+      .col img{
+               width:200px;
+               border-radius:10px;
+      }
+}
+
+
+     
+      
+    
+    
+}
